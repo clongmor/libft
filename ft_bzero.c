@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/20 12:15:35 by event             #+#    #+#             */
-/*   Updated: 2019/05/21 10:14:57 by clongmor         ###   ########.fr       */
+/*   Created: 2019/05/21 10:06:14 by clongmor          #+#    #+#             */
+/*   Updated: 2019/05/21 10:22:32 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
+#include "libft.h"
 
-int		ft_strlen(const char *s);
-void	ft_memset(void *ptr, int cbyte, size_t len);
-void	ft_bzero(void *s, size_t n);
-
-#endif
+void	ft_bzero(void *s, size_t n)
+{
+	ft_memset(s, '0', n);
+}
