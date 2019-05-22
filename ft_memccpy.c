@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 17:24:45 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/21 17:59:06 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/22 10:50:18 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		ft_memcpy((dst_ptr + i), (src_ptr + i), 1); // need to find a way to pass each char to memcpy rather than copy whole string each time it moves a char in src
+		ft_memcpy((dst_ptr + i), (src_ptr + i), 1);
 		if (src_ptr[i] == character)
 		{
-			nlptr = src_ptr[i + 1];
+			nlptr = (void*)&src_ptr[i + 1];
 			return (nlptr);
 		}
 		i++;
