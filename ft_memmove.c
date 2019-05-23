@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:02:52 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/23 15:56:23 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/23 17:49:31 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	dst_ptr = dst;
 	src_ptr = src;
-	tmp_ptr = (char*)malloc(ft_strlen(src_ptri) + 1);
+	tmp_ptr = (char*)malloc(ft_strlen(src_ptr) + 1);
 	i = 0;
 	while (i < len && src_ptr[i] != '\0')
 	{
