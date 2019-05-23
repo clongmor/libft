@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 17:24:45 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/22 10:50:18 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/23 15:46:38 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,12 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		ft_memcpy((dst_ptr + i), (src_ptr + i), 1);
 		if (src_ptr[i] == character)
 		{
+			dst_ptr[i + 1] = '\0';
 			nlptr = (void*)&src_ptr[i + 1];
 			return (nlptr);
 		}
 		i++;
 	}
+	dst_ptr[i] = '\0';
 	return (nlptr);
 }

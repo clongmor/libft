@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:32:58 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/23 15:18:43 by clongmor         ###   ########.fr       */
+/*   Created: 2019/05/23 14:50:59 by clongmor          #+#    #+#             */
+/*   Updated: 2019/05/23 15:39:46 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	size_t		i;
-	char		*dst_ptr;
-	const char	*src_ptr;
+	size_t	slen;
+	char	*dst_ptr;
 
+	slen = (size_t)ft_strlen(src);
+	ft_memcpy(dst, src, len);
 	dst_ptr = dst;
-	src_ptr = src;
-	i = 0;
-	while (i < n)
+	while (slen < (len - 1))
 	{
-		dst_ptr[i] = src_ptr[i];
-		if (src_ptr[i] == '\0')
-			i = n;
-		i++;
+		dst_ptr[slen] = '\0';
+		slen++;
 	}
-	dst_ptr[i] = '\0';
 	dst = dst_ptr;
 	return (dst);
 }
