@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 17:45:09 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/24 09:03:05 by clongmor         ###   ########.fr       */
+/*   Created: 2019/05/24 08:19:28 by clongmor          #+#    #+#             */
+/*   Updated: 2019/05/24 08:41:31 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(char const *s)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	size_t	n;
+
+	n = ((size_t)ft_strlen(s1) + 1);
+	ft_strcpy((s1 + n), s2);
+	return (s1);
 }
