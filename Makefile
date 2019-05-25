@@ -6,7 +6,7 @@
 #    By: clongmor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/23 09:23:50 by clongmor          #+#    #+#              #
-#    Updated: 2019/05/25 09:54:23 by clongmor         ###   ########.fr        #
+#    Updated: 2019/05/25 11:27:53 by clongmor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,3 +37,8 @@ fclean: clean
 	/bin/rm -f $(NAME)
 
 re: fclean all
+
+test:
+	gcc -c ft_*.c -Wall -Wextra -Werror
+	gcc -shared -o libft.so -fPIC ft*.o
+	rm *.o
