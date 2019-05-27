@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 08:19:28 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/24 08:41:31 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/27 16:02:44 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strcat(char *s1, const char *s2)
 {
 	size_t	n;
 
-	n = ((size_t)ft_strlen(s1) + 1);
+	n = ((size_t)ft_strlen(s1));
 	ft_strcpy((s1 + n), s2);
 	return (s1);
 }

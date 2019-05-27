@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 08:37:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 12:24:10 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/27 17:39:23 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	i = 0;
 	haystack_new = (char*)haystack;
 	ft_bzero(haystack_new, h_len);
-	while (i <= len && haystack[i] != '\0')
+	while (i < len && haystack[i] != '\0')
 	{
 		haystack_new[i] = (char)haystack[i];
 		i++;
