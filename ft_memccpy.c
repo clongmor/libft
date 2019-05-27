@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 17:24:45 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/23 15:46:38 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/27 13:34:53 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,25 +17,23 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	unsigned char	character;
 	size_t			i;
 	void			*nlptr;
-	char			*dst_ptr;
-	const char		*src_ptr;
+	unsigned char	*dst_ptr;
+	unsigned char	*src_ptr;
 
-	dst_ptr = dst;
-	src_ptr = src;
+	dst_ptr = (unsigned char*)dst;
+	src_ptr = (unsigned char*)src;
 	nlptr = NULL;
-	character = c;
+	character = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
 		ft_memcpy((dst_ptr + i), (src_ptr + i), 1);
 		if (src_ptr[i] == character)
 		{
-			dst_ptr[i + 1] = '\0';
-			nlptr = (void*)&src_ptr[i + 1];
+			nlptr = &dst[i + 1];
 			return (nlptr);
 		}
 		i++;
 	}
-	dst_ptr[i] = '\0';
-	return (nlptr);
+	return (NULL);
 }

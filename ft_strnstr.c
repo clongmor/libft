@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 11:32:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 14:30:26 by clongmor         ###   ########.fr       */
+/*   Created: 2019/05/27 08:37:02 by clongmor          #+#    #+#             */
+/*   Updated: 2019/05/27 12:24:10 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	unsigned char	character;
-	size_t			i;
-	void			*nlptr;
-	unsigned char		*src_ptr;
+	char	*haystack_new;
+	size_t	h_len;
+	size_t	i;
 
-	src_ptr = (unsigned char*)s;
-	nlptr = NULL;
-	character = (unsigned char)c;
+	h_len = ft_strlen(haystack) + 1;
 	i = 0;
-	while (i < n)
+	haystack_new = (char*)haystack;
+	ft_bzero(haystack_new, h_len);
+	while (i <= len && haystack[i] != '\0')
 	{
-		if (src_ptr[i] == character)
-		{
-			nlptr = (void*)&src_ptr[i];
-			return (nlptr);
-		}
+		haystack_new[i] = (char)haystack[i];
 		i++;
 	}
-	return (nlptr);
+	haystack_new[i] = '\0';
+	return (ft_strstr((const char*)haystack_new, needle));
+
 }

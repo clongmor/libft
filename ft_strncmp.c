@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 11:32:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 14:30:26 by clongmor         ###   ########.fr       */
+/*   Created: 2019/05/27 11:40:07 by clongmor          #+#    #+#             */
+/*   Updated: 2019/05/27 12:36:16 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned char	character;
-	size_t			i;
-	void			*nlptr;
-	unsigned char		*src_ptr;
+	size_t	s1_len;
+	size_t	s2_len;
 
-	src_ptr = (unsigned char*)s;
-	nlptr = NULL;
-	character = (unsigned char)c;
-	i = 0;
-	while (i < n)
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+
+	if (s1_len <= s2_len)
 	{
-		if (src_ptr[i] == character)
-		{
-			nlptr = (void*)&src_ptr[i];
-			return (nlptr);
-		}
-		i++;
+		if (s1_len < n)
+			n = s1_len;
 	}
-	return (nlptr);
+	else if (s2_len < n)
+		n = s2_len;
+	return (ft_memcmp(s1, s2, n));
+	
 }
