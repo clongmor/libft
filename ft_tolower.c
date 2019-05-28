@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 08:42:29 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/28 10:21:29 by clongmor         ###   ########.fr       */
+/*   Created: 2019/05/28 17:47:03 by clongmor          #+#    #+#             */
+/*   Updated: 2019/05/28 17:51:34 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+int		ft_tolower(int c)
 {
-	size_t	len;
-	size_t	len2;
+	unsigned char	character;
 
-	len = ft_strlen(s1);
-	len2 = ft_strlen(s2);
-	if (n >= len2)
-		n = len2;
-	ft_memcpy((s1 + len), s2, n);
-	if (s1[len + n - 1] != '\0')
-		s1[len + n] = '\0';
-	return (s1);
+	character = (unsigned char)c;
+	if (c < 65 || c > 90)
+		return (c);
+	if (character >= 'A' && character <= 'Z')
+		character = character + 32;
+	return (character);
 }

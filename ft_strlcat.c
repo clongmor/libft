@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 08:16:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 17:06:41 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/28 12:02:17 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	if (j < dstsize)
 		dst[dst_len] = '\0';
+	if (dstsize <= j)
+		return (dstsize + ft_strlen(src));
 	return (j + ft_strlen(src));
 }

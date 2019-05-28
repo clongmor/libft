@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 09:23:25 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 17:26:36 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/28 15:22:33 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	unsigned char	character;
-	size_t			i;
+	int				i;
 	char			*nlptr;
 	const char		*src_ptr;
 
 	src_ptr = s;
-	nlptr = (char*)&src_ptr[0];;
+	nlptr = NULL;
 	character = (char)c;
 	if (ft_strncmp(s, "", 1) == 0)
-		return (NULL);
+		return (nlptr);
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
@@ -34,5 +34,5 @@ char	*ft_strrchr(const char *s, int c)
 		}
 		i--;
 	}
-	return (NULL);
+	return (nlptr);
 }

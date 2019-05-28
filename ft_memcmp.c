@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 12:43:24 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 15:31:54 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/28 08:12:36 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	diff = 0;
 	while (s1_ptr[i] == s2_ptr[i] && i < n)
 	{
+		if (i == (n - 1))
+			break;
 		i++;
 	}
 	diff = s1_ptr[i] - s2_ptr[i];
