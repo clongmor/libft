@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:15:35 by event             #+#    #+#             */
-/*   Updated: 2019/05/28 17:51:53 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/05/29 12:00:50 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,13 @@ int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
+int			ft_isprint(int c);
+int			ft_isascii(int c);
+int			ft_isalpha(int c);
+int			ft_isupper(int c);
+int			ft_islower(int c);
+int			ft_isdigit(int c);
+int			ft_isalnum(int c);
+int			ft_atoi(const char *str);
 
 #endif
