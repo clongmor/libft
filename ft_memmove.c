@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:02:52 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 14:26:46 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:12:39 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (src_ptr < dst_ptr)
 	{
 		while (len > 0)
-		{	
+		{
 			ft_memcpy((dst_ptr + (len - 1)), (src_ptr + (len - 1)), 1);
 			len--;
 		}

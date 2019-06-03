@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 09:02:16 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/29 10:37:38 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:03:13 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_isalpha(int c)
 	character = (unsigned char)c;
 	if (c > 255)
 		return (0);
-	if (ft_isupper(character) != 0 || ft_islower(character) != 0 )
+	if (ft_isupper(character) != 0 || ft_islower(character) != 0)
 		return (1);
 	return (0);
 }

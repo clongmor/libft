@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:33:06 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 11:49:35 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:32:33 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int		ft_strcmp(const char *s1, const char *s2)
 	s2_len = ft_strlen(s2) + 1;
 	if (s1_len <= s2_len)
 		return (ft_memcmp(s1, s2, s1_len));
-	else 
+	else
 		return (ft_memcmp(s1, s2, s2_len));
 }

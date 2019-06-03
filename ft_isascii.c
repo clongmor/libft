@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 08:38:11 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/29 08:42:40 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:34:02 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ int		ft_isascii(int c)
 	character = (unsigned char)c;
 	if (c < 0 || c > 127)
 		return (0);
-	else 
+	else
 		return (1);
 }

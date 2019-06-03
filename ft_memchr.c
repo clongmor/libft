@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:32:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 17:37:53 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:32:00 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	character;
-	size_t			i;
-	void			*nlptr;
+	unsigned char		character;
+	size_t				i;
+	void				*nlptr;
 	unsigned char		*src_ptr;
 
 	src_ptr = (unsigned char*)s;

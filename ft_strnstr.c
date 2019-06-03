@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 08:37:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 17:39:23 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/03 14:28:33 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,29 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char	*haystack_new;
-	size_t	h_len;
-	size_t	i;
+	int				i;
+	size_t			k;
+	void			*nlptr;
+	size_t			store;
 
-	h_len = ft_strlen(haystack) + 1;
-	i = 0;
-	haystack_new = (char*)haystack;
-	ft_bzero(haystack_new, h_len);
-	while (i < len && haystack[i] != '\0')
+	i = -1;
+	k = 0;
+	if (*needle == '\0' || ft_strncmp(needle, "", 1) == 0)
+		return ((char*)haystack);
+	while (++i < ft_strlen(haystack) && i < (int)len)
 	{
-		haystack_new[i] = (char)haystack[i];
-		i++;
+		if (haystack[i] != needle[k])
+			continue;
+		nlptr = (void*)&haystack[i];
+		store = i;
+		while (haystack[i] == needle[k] && i < (int)len && (k = k + 1))
+		{
+			i++;
+			if (needle[k] == '\0')
+				return (nlptr);
+		}
+		k = 0;
+		i = store + 1;
 	}
-	haystack_new[i] = '\0';
-	return (ft_strstr((const char*)haystack_new, needle));
-
+	return (NULL);
 }
