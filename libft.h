@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:15:35 by event             #+#    #+#             */
-/*   Updated: 2019/05/29 12:00:50 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/03 17:58:43 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,14 @@ int			ft_islower(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);
 int			ft_atoi(const char *str);
+
+void		ft_strclr(char *s);
+void		*ft_memalloc(size_t size);
+void		ft_memdel(void **ap);
+char		*ft_strnew(size_t size);
+void		ft_strdel(char **as);
+void		ft_striter(char *s, void (*f)(char *));
+void		ft_striteri(char *s, void (*f)(unsigned int, char *));
+char		*ft_strmap(char const *s, char (*f)(char));
 
 #endif
