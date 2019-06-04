@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 11:40:07 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/04 09:10:24 by clongmor         ###   ########.fr       */
+/*   Created: 2019/06/04 12:19:39 by clongmor          #+#    #+#             */
+/*   Updated: 2019/06/04 12:47:11 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	s1_len;
-	size_t	s2_len;
+	char	*join_str;
 
-	s1_len = ft_strlen(s1) + 1;
-	s2_len = ft_strlen(s2) + 1;
-	if (s1_len <= s2_len)
-	{
-		if (s1_len < n)
-			n = s1_len;
-	}
-	else if (s2_len < n)
-		n = s2_len;
-	return (ft_memcmp(s1, s2, n));
+	join_str = (char *)malloc((ft_strlen(s1) + ft_strlen(s2)) + 1);
+	if (join_str == NULL)
+		return (NULL);
+	ft_memcpy(join_str, s1, ft_strlen(s1));
+	ft_memcpy((join_str + ft_strlen(s1)), s2, ft_strlen(s2));
+	return (join_str);
 }

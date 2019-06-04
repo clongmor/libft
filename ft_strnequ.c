@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 11:40:07 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/04 09:10:24 by clongmor         ###   ########.fr       */
+/*   Created: 2019/06/04 09:15:40 by clongmor          #+#    #+#             */
+/*   Updated: 2019/06/04 09:30:23 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	size_t	s1_len;
 	size_t	s2_len;
+	int		diff;
 
 	s1_len = ft_strlen(s1) + 1;
 	s2_len = ft_strlen(s2) + 1;
@@ -26,5 +27,9 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	else if (s2_len < n)
 		n = s2_len;
-	return (ft_memcmp(s1, s2, n));
+	diff = (ft_memcmp(s1, s2, n));
+	if (diff == 0)
+		return (1);
+	else
+		return (0);
 }

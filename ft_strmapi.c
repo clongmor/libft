@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 11:40:07 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/04 09:10:24 by clongmor         ###   ########.fr       */
+/*   Created: 2019/06/04 08:30:48 by clongmor          #+#    #+#             */
+/*   Updated: 2019/06/04 08:36:02 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	s1_len;
-	size_t	s2_len;
+	char			*new_str;
+	unsigned int	i;
 
-	s1_len = ft_strlen(s1) + 1;
-	s2_len = ft_strlen(s2) + 1;
-	if (s1_len <= s2_len)
+	i = 0;
+	new_str = (char *)malloc(ft_strlen(s));
+	if (new_str == NULL)
+		return (NULL);
+	while (s[i])
 	{
-		if (s1_len < n)
-			n = s1_len;
+		new_str[i] = (*f)(i, (char)s[i]);
+		i++;
 	}
-	else if (s2_len < n)
-		n = s2_len;
-	return (ft_memcmp(s1, s2, n));
+	return (new_str);
 }
