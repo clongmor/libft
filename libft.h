@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:15:35 by event             #+#    #+#             */
-/*   Updated: 2019/06/04 12:50:20 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/04 16:30:27 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,6 @@ char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s);
 
+int			ft_check_wspacef(char *str);
+int			ft_check_wspaceb(char *str);
 #endif

@@ -6,7 +6,7 @@
 #    By: clongmor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/23 09:23:50 by clongmor          #+#    #+#              #
-#    Updated: 2019/06/04 12:51:08 by clongmor         ###   ########.fr        #
+#    Updated: 2019/06/04 16:31:15 by clongmor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS = ft_memchr.c ft_memcpy.c ft_memset.c ft_putstr.c ft_strlen.c ft_bzero.c \
 	   ft_isalnum.c ft_atoi.c ft_strclr.c ft_memalloc.c ft_memdel.c \
 	   ft_strnew.c ft_strdel.c ft_striter.c ft_striteri.c ft_strmap.c \
 	   ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c \
-	   ft_strtrim.c
+	   ft_strtrim.c 
 
 
 OSRCS = ft_memchr.o ft_memcpy.o ft_memset.o ft_putstr.o ft_strlen.o \
