@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 12:43:24 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/03 13:31:06 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/05 08:11:14 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 			break ;
 		i++;
 	}
-	diff = s1_ptr[i] - s2_ptr[i];
+	if (n > 0)
+		diff = s1_ptr[i] - s2_ptr[i];
 	return (diff);
 }

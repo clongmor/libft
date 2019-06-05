@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:15:35 by event             #+#    #+#             */
-/*   Updated: 2019/06/04 16:30:27 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/05 16:50:29 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,10 @@ int			ft_strnequ(char const *s1, char const *s2, size_t n);
 char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s);
+char		**ft_strsplit(char const *s, char c);
 
+size_t		ft_wordlenchr(const char *s, size_t index, char c);
+size_t		ft_wordsplit(const char *s, char c);;
 int			ft_check_wspacef(char *str);
 int			ft_check_wspaceb(char *str);
 #endif

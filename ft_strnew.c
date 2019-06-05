@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 16:29:24 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/03 16:38:15 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/05 09:29:22 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*ft_strnew(size_t size)
 {
 	char	*mem_area;
 
-	mem_area = (char *)ft_memalloc(size);
-	ft_bzero(mem_area, size);
+	mem_area = (char *)ft_memalloc(size + 1);
 	return (mem_area);
 }
