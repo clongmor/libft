@@ -6,13 +6,13 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:48:57 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/04 18:06:55 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/06 12:06:20 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_check_wspacef(char *str)
+static int		ft_check_wspacef(char *str)
 {
 	size_t	i;
 
@@ -23,7 +23,7 @@ int		ft_check_wspacef(char *str)
 	return (i);
 }
 
-int		ft_check_wspaceb(char *str)
+static int		ft_check_wspaceb(char *str)
 {
 	size_t	i;
 
@@ -34,7 +34,7 @@ int		ft_check_wspaceb(char *str)
 	return (i);
 }
 
-char	*ft_strtrim(char const *s)
+char			*ft_strtrim(char const *s)
 {
 	char	*ws_str;
 	size_t	i;

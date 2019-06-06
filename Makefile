@@ -6,7 +6,7 @@
 #    By: clongmor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/23 09:23:50 by clongmor          #+#    #+#              #
-#    Updated: 2019/06/05 10:29:38 by clongmor         ###   ########.fr        #
+#    Updated: 2019/06/06 16:36:56 by clongmor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,9 @@ SRCS = ft_memchr.c ft_memcpy.c ft_memset.c ft_putstr.c ft_strlen.c ft_bzero.c \
 	   ft_isalnum.c ft_atoi.c ft_strclr.c ft_memalloc.c ft_memdel.c \
 	   ft_strnew.c ft_strdel.c ft_striter.c ft_striteri.c ft_strmap.c \
 	   ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c \
-	   ft_strtrim.c ft_strsplit.c
+	   ft_strtrim.c ft_strsplit.c ft_itoa.c ft_strrev.c ft_putnbr.c \
+	   ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
+	   ft_lstnew.c ft_lstdelone.c
 
 
 OSRCS = ft_memchr.o ft_memcpy.o ft_memset.o ft_putstr.o ft_strlen.o \
@@ -33,7 +35,9 @@ OSRCS = ft_memchr.o ft_memcpy.o ft_memset.o ft_putstr.o ft_strlen.o \
 		ft_isdigit.o ft_isalnum.o ft_atoi.o ft_strclr.o ft_memalloc.o \
 		ft_memdel.o ft_strnew.o ft_strdel.o ft_striter.o ft_striteri.o \
 		ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o \
-		ft_strjoin.o ft_strtrim.o ft_strsplit.o 
+		ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_itoa.o ft_strrev.o \
+		ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o \
+		ft_putnbr_fd.o ft_lstnew.o ft_lstdelone.o
 
 FLAGS = -Wall -Wextra -Werror
 
