@@ -6,13 +6,13 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 11:58:26 by event             #+#    #+#             */
-/*   Updated: 2019/05/21 13:46:45 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/10 12:35:47 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strlen(const char *s)
+size_t		ft_strlen(const char *s)
 {
 	size_t	i;
 
@@ -21,5 +21,5 @@ int		ft_strlen(const char *s)
 	{
 		i++;
 	}
-	return ((size_t)i);
+	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 08:52:01 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/04 09:09:18 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/10 17:03:02 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int		ft_strequ(char const *s1, char const *s2)
 	size_t	s2_len;
 	int		diff;
 
+	if (s1 == NULL || s2 == NULL)
+		return (0);
 	s1_len = ft_strlen(s1) + 1;
 	s2_len = ft_strlen(s2) + 1;
 	if (s1_len <= s2_len)

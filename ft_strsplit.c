@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 09:37:28 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/06 13:35:03 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/10 17:06:03 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ char			**ft_strsplit(const char *s, char c)
 	int		i;
 	int		j;
 
+	if (s == NULL)
+		return (NULL);
 	i = 0;
 	j = 0;
 	count = ft_wordsplit(s, c);

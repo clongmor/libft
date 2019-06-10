@@ -6,13 +6,13 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:48:57 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/06 12:06:20 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/10 17:52:32 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_check_wspacef(char *str)
+static size_t		ft_check_wspacef(char *str)
 {
 	size_t	i;
 
@@ -23,11 +23,14 @@ static int		ft_check_wspacef(char *str)
 	return (i);
 }
 
-static int		ft_check_wspaceb(char *str)
+static size_t		ft_check_wspaceb(char *str)
 {
 	size_t	i;
 
-	i = ft_strlen(str) - 1;
+	if (ft_strlen(str) == 0)
+		i = 0;
+	else
+		i = ft_strlen(str) - 1;
 	while (i > 0 && (str[i] == '\t' || str[i] == '\n' || str[i] == '\r' \
 				|| str[i] == ' ' || str[i] == '\v' || str[i] == '\f'))
 		i--;
@@ -42,9 +45,13 @@ char			*ft_strtrim(char const *s)
 	size_t	end_index;
 
 	i = 0;
+	if (!s)
+		return ((char*)s);
 	start_index = ft_check_wspacef((char *)s);
 	end_index = ft_check_wspaceb((char *)s);
-	ws_str = (char *)malloc(ft_strlen(s));
+	if (end_index < start_index)
+		return (ft_strnew(0));
+	ws_str = (char *)malloc((end_index - start_index + 2) * sizeof(char));
 	if (ws_str == NULL)
 		return (NULL);
 	i = 0;

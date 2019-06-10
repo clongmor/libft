@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:15:35 by event             #+#    #+#             */
-/*   Updated: 2019/06/07 17:46:37 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/10 12:41:33 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef	struct		s_list
 void				ft_putchar(char c);
 void				ft_putstr(char const *c);
 void				ft_putendl(char const *s);
-int					ft_strlen(const char *s);
+size_t				ft_strlen(const char *s);
 void				*ft_memset(void *ptr, int cbyte, size_t len);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
@@ -82,8 +82,12 @@ t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-int                 ft_isupper(int c);
-int                 ft_islower(int c);
+int					ft_isspace(int c);
+char				*ft_strndup(const char *s1, size_t n);
+int					ft_isupper(int c);
+int					ft_islower(int c);
 char				*ft_strrev(char *s);
 #endif

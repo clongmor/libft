@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 17:03:42 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/03 17:23:07 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/10 16:22:10 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_striter(char *s, void (*f)(char *))
 {
 	size_t	i;
 
+	if (s == NULL || !f)
+		return ;
 	i = 0;
 	while (s[i])
 	{
