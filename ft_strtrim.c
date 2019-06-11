@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:48:57 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 17:52:32 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/11 07:26:51 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static size_t		ft_check_wspaceb(char *str)
 	return (i);
 }
 
-char			*ft_strtrim(char const *s)
+char				*ft_strtrim(char const *s)
 {
 	char	*ws_str;
 	size_t	i;
