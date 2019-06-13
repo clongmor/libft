@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 08:38:11 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 10:01:04 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/13 15:50:20 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 		(first) = (first)->next;
 		(lst) = (lst)->next;
 	}
+	free(first);
 	return (head);
 }
