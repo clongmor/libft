@@ -6,9 +6,16 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 17:24:45 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 13:34:53 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 14:40:42 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in 2 banks of memory and an int and copies from source
+** to destination until it finds the specified character, or
+** until it reaches the length specified, whichever comes first.
+** Uses: ft_memcpy
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:02:52 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/03 13:12:39 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 11:16:53 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two memory banks and a length. copies from
+** from source to destination for the length specified,
+** copies backwards if they overlap and copies forwards
+** if they don't. returns the destination string.
+** Uses: ft_memcpy
+*/
 
 #include "libft.h"
 

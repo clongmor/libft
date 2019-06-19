@@ -6,9 +6,16 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 17:47:03 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/28 17:51:34 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 16:54:40 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in an int and checks if its uppercase.
+** if it is, it changes it to lowercase.
+** returns the character.
+** Uses: no libft functions.
+*/
 
 #include "libft.h"
 

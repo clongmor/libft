@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 15:38:09 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/03 16:11:07 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 16:54:54 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a size and alloactes a block of memory
+** of size specified by input to a pointer with
+** no type and then zero's the bytes using memset.
+** returns the zero'd memory block.
+** Uses: ft_memset & malloc
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:32:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/03 13:32:00 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 11:26:44 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a memory bank and an int and a length. scans
+** through the memory until it finds the specified int, or
+** it reaches the specified length. Returns a pointer to
+** the found character or returns a null pointer.
+** Uses: no libft functions.
+*/
 
 #include "libft.h"
 #include <stdio.h>

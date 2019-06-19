@@ -6,9 +6,16 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:33:06 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/11 08:19:29 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 14:39:32 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in 2 strings and compares them character by
+** character using memcmp, and returns 1, 0 or -1,
+** depending whether s1 > s2, s1 = s2 or s1 < s2.
+** Uses: ft_strlen, ft_memcmp
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,18 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 12:43:24 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/11 08:19:31 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 11:36:43 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two memory banks and a length. compares
+** the memory, byte by byte, until it finds a position
+** at which the memory banks differ, or until it reaches
+** the length specified. returns the difference in
+** in unsigned char value.
+** Uses: no libft functions.
+*/
 
 #include "libft.h"
 

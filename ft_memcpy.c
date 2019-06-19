@@ -6,9 +6,16 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 11:32:58 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 12:57:44 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 10:59:33 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two banks of memory and copies from source
+** to destination byte by byte, for length of n. returns
+** the destination.
+** Uses: no libft functions
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,16 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 16:53:39 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 16:14:16 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 16:53:42 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a double pointer and uses memdel to
+** to free the memory and to set the pointer =
+** NULL. returns nothing.
+** Uses: ft_memdel
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,19 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 08:37:02 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/12 11:47:12 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 14:40:22 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two pointers to strings and a length. if
+** needle is empty, returns haystack. Otherwise searches
+** for needle in haystack(up to n characters of haystack
+** at maxmimum and returns a pointer to the
+** first character of the located string in haystack, or
+** a pointer to NULL if it is not there.
+** Uses: ft_strncmp, ft_strlen
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 10:37:53 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 15:57:46 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 15:42:03 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in an int and checks if its in the normal
+** ascii range, and then checks if it is a digit
+** character or an alphabet character. returns 0
+** for not true and 1 for true.
+** Uses: ft_isalpha, ft_isdigit
+*/
 
 #include "libft.h"
 

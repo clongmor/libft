@@ -6,9 +6,18 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 14:50:59 by clongmor          #+#    #+#             */
-/*   Updated: 2019/05/27 15:57:25 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 12:19:28 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two pointers to strings and a length.
+** copies from source to destination, until it reaches
+** the end of source or the length specified, whichever
+** comes first. if source is shorter than length, it
+** fills the rest of dest with \0. Returns destination.
+** Uses: ft_strlen, ft_memcpy.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 11:58:26 by event             #+#    #+#             */
-/*   Updated: 2019/06/10 12:35:47 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 11:50:43 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a pointer to string and counts and
+** returns the length of the string.
+** Uses: no libft functions.
+*/
 
 #include "libft.h"
 

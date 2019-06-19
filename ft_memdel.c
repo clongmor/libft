@@ -6,9 +6,16 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 16:11:57 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 16:09:13 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 16:30:42 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a double pointer and frees the memory and the
+** contents of the pointer. Then sets the pointer = NULL.
+** returns nothing.
+** Uses: no libft functions
+*/
 
 #include "libft.h"
 

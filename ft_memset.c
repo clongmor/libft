@@ -6,9 +6,15 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 10:41:05 by event             #+#    #+#             */
-/*   Updated: 2019/06/10 12:31:13 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 10:41:00 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes a bank of memory and sets each byte to the provided int,
+** for the length of the provided size_t. reads through \0 since
+** not reading as a string. returns the pointer to memory area.
+*/
 
 #include "libft.h"
 

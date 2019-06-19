@@ -6,9 +6,18 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:40:07 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/11 08:19:27 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 14:38:37 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two pointers to strings and a length,
+** it copmares them character by character, using
+** memcmp, comparing at most n characters. returns
+** 1, 0, or -1, depending on whether s1 > s2,
+** s1 = s2, s1 < s2.
+** Uses: ft_strlen, ft_memcmp
+*/
 
 #include "libft.h"
 

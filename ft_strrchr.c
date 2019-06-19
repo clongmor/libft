@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 09:23:25 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/05 09:07:36 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/19 13:40:42 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a pointer to a string and an int, scans through
+** the string in from last index to first and checks for the
+** int. returns a pointer to the last occurrence of the int
+** or NULL if its not found.
+** Uses: ft_strncmp, ft_strlen
+*/
 
 #include "libft.h"
 
