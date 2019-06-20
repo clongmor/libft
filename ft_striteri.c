@@ -6,9 +6,18 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 17:24:22 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 16:24:01 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/20 08:17:17 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a string and a function which takes
+** an unisgned int and a string. iterates through the
+** string and applies the function to each character
+** it relies on the string index as an input. Returns
+** nothing.
+** Uses: no libft functions
+*/
 
 #include "libft.h"
 

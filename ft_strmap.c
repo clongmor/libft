@@ -6,9 +6,18 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 17:44:29 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 16:24:50 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/20 08:19:52 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a string and a function which takes a
+** character as input. It allocates memory the size
+** of the string and then applies the function to
+** the string character by character and stores it
+** in the new memory allocated. returns the new string.
+** Uses: ft_strlen && malloc
+*/
 
 #include "libft.h"
 

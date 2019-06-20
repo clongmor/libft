@@ -6,9 +6,19 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 08:30:48 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 16:25:17 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/20 09:05:45 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a pointer to string and a function which
+** takes an unsigned int and a character. it allocates
+** memory for the size of the string + \0. it then
+** applies to function to the string character by character
+** and stores the characters in the allocated memory.
+** returns the newly changed string.
+** Uses: ft_strlen
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 08:52:01 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 17:03:02 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/20 11:27:32 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**takes in two pointers to strings and compares
+** the strings character by character until the end
+** of the shortest string. returns 1 for the same and
+** 0 for difference found.
+**Uses: ft_strlen, ft_memcmp
+*/
 
 #include "libft.h"
 
