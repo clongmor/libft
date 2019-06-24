@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:19:39 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 17:05:25 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 09:23:20 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two pointers to strings, and allocates memory
+** for the size of the two added together + \0. copies s1
+** into the memory and then copies s2 in starting at the
+** end of s1 using memcpy. returns the new string created.
+** Uses: ft_memcpy, ft_strlen && malloc
+*/
 
 #include "libft.h"
 

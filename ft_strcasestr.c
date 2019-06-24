@@ -6,9 +6,21 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 10:46:27 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/12 13:53:51 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/24 08:24:08 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two pointers to strings and checks if
+** needle is in haystack, but ignores the case of
+** both needle and haystack by converting everything
+** to lowercase in temp string copies. it then does
+** the comparisons and returns an index where needle
+** is found (or -1). the pointer is then set to the
+** index in the orginal string and returned (or NULL).
+** Uses: 1x static function, ft_strlen, ft_strncmp, 
+** ft_strdup, ft_strlowcase && malloc && free
+*/
 
 #include "libft.h"
 

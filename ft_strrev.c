@@ -6,9 +6,15 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 08:54:48 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/06 09:57:13 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/24 08:42:10 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a pointer to string and reverses the string
+** by swopping two character at a time. returns the string.
+** Uses: ft_strlen.
+*/
 
 #include "libft.h"
 

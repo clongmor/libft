@@ -6,9 +6,23 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 09:37:28 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/12 11:14:42 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 10:17:12 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Takes in a pointer to string and a character to split with.
+** It uses ft_wordsplit to count how many words the string will
+** split into. it then mallocs that many pointer spaces into a
+** double character array. it then uses ft_split. ft_split calls
+** ft_wordlenchr counts how long the "word" is between two of the
+** specified characters. ft_split then mallocs that much space into
+** the relevant slot in the double character array. it then copies
+** the string section into the array using strncpy and adds \0. it
+** repeats this loop until the supplied string is empty and then
+** rteurns the double character array.
+** Uses: 3x static functions, ft_strncpy & malloc
+*/
 
 #include "libft.h"
 

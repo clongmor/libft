@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 09:15:40 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 16:56:06 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 08:23:57 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two pointers to strings and a length, it checks if
+** if the strings are the same character by character until it
+** reaches the length specified. returns 1 if they are the same
+** and 0 if they are not.
+** Uses: ft_strlen, ft_memcmp
+*/
 
 #include "libft.h"
 

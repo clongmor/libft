@@ -6,9 +6,17 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 12:13:20 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/06 12:59:48 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 10:51:03 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in an integer, checks if its zero, if not checks
+** the conditions and recursively calls the function till
+** it reaches an int smaller than 10 and then breaks out
+** and puts the numbers to the output. returns nothing.
+** Uses: ft_putchar, ft_putnbr, ft_putstr.
+*/
 
 #include "libft.h"
 

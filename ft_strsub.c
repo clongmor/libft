@@ -6,9 +6,18 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 09:39:26 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 17:04:06 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 08:27:24 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a pointer to string, an index and a length,
+** uses malloc to allocate memory for the specified length
+** plus 1 for \0. it then copies from the start index of the
+** string supplied for the length specified into the allocated
+** memory string, and then null terminates. Returns the new string.
+** Uses: malloc
+*/
 
 #include "libft.h"
 

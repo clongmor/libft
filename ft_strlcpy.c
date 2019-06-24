@@ -6,9 +6,16 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 10:27:37 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/12 10:48:02 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/24 08:27:35 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in two pointers to strings and a length. copies
+** source into destination up to dstsize - 1, and then adds
+** \0, while dstsize is not 0. returns the length of source.
+** Uses: ft_strlen.
+*/
 
 #include "libft.h"
 

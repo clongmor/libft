@@ -6,9 +6,21 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 08:38:11 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/13 15:50:20 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 14:23:46 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a list and a function to apply to nodes of a list.
+** stores the function applied first node in a temp variable,
+** creates a new node  using lstnew and stores that temp node's
+** details in the first node and sets a pointer to mark the
+** first node. then moves to the next node and loops though
+** all the nodes in the supplied list. it then frees memory
+** for the temp variables. and returns a pointer to the start
+** of the newly created list.
+** Uses: ft_lstnew && free.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,19 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 15:56:07 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/10 14:53:20 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 12:24:40 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a data for content and its size as a size_t. It then
+** allocates memory the size of a t_list node and checks if the
+** the content supiled is NULL. if it isn't, then allocates
+** memory for the content according the specified content size
+** and copies in the content, and adds the content size to the node.
+** links the node to nothing and returns the new head node of a fresh list.
+** Uses: ft_memalloc, ft_memcpy.c
+*/
 
 #include "libft.h"
 

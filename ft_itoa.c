@@ -6,9 +6,21 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 08:32:38 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/12 11:16:40 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 14:24:14 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in an int and uses ft_intlength to count how many
+** digits are in the int. it allocates memory for the size
+** of the digits + \0 and sets it to \0. it checks if its
+** a negative number and  makes it positive. then calls
+** copypasta to convert the digits into characters one by
+** one and adding them to the memory in reverse and return
+** the string. the string is then reversed using ft_strrev
+** and the new string is returned.
+** Uses: 1x static function, ft_strrev, ft_intlength, ft_strdup, ft_strnew
+*/
 
 #include "libft.h"
 

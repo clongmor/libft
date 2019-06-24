@@ -6,9 +6,20 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 12:48:57 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/11 07:26:51 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/21 09:55:44 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** takes in a pointer to string and uses the static
+** functions to check for white spaces before and after
+** any other characters in the string. it then allocates
+** allocates memory for the string without white spaces
+** at the start or end and copies across the contents
+** excluding those whites spaces before and after. It
+** returns the new copied string.
+** Uses: 2x static funtions, ft_strlen && malloc.
+*/
 
 #include "libft.h"
 
