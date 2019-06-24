@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 10:46:27 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/24 08:24:08 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/24 09:19:57 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** the comparisons and returns an index where needle
 ** is found (or -1). the pointer is then set to the
 ** index in the orginal string and returned (or NULL).
-** Uses: 1x static function, ft_strlen, ft_strncmp, 
+** Uses: 1x static function, ft_strlen, ft_strncmp,
 ** ft_strdup, ft_strlowcase && malloc && free
 */
 
