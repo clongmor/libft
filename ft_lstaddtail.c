@@ -6,7 +6,7 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 12:55:44 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/27 16:31:02 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/27 18:08:06 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,12 @@ void	ft_lstaddtail(t_list *lst, t_list *elem)
 	}
 	while (len > 1)
 	{
-		(lst) = (lst)->next;	
+		printf("in lstaddtail loop: current node has content %s and size %zu\n", lst->content, lst->content_size);
+		(lst) = (lst)->next;
 		len--;
 	}
+	printf("check we're on the last node: %s\n", lst->content);
 	(lst)->next = elem->content;
+//	(lst) = lst->next; this line throws seg fault so check previous line worked
+	printf("added new element with content: %s and size: %zu\n", lst->content, lst->content_size);
 }
