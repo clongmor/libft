@@ -6,11 +6,12 @@
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 08:26:12 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/27 09:19:26 by clongmor         ###   ########.fr       */
+/*   Updated: 2019/06/28 09:45:08 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 size_t	ft_lstlen(t_list *lst)
 {
