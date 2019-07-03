@@ -5,23 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: clongmor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/27 08:26:12 by clongmor          #+#    #+#             */
-/*   Updated: 2019/06/28 09:45:08 by clongmor         ###   ########.fr       */
+/*   Created: 2019/07/02 16:47:39 by clongmor          #+#    #+#             */
+/*   Updated: 2019/07/02 16:54:52 by clongmor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_lstlen(t_list *lst)
 {
-	size_t	count;
+	int	i;
 
-	count = 0;
-	while (lst)
+	i = 0;
+	if (!lst)
+		return (i);
+	while (!(lst == NULL))
 	{
-		count++;
+		i++;
 		lst = lst->next;
 	}
-	return (count);
+	return (i);
 }
